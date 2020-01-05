@@ -14,20 +14,9 @@ BuildArch:      noarch
 BuildRequires:  python-devel
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(setuptools-scm)
-
-%description
-This is a setuptools_scm plugin that adds support for git archives (for
-example the ones GitHub automatically generates). Note that it only works for
-archives of tagged commits (because git currently lacks a format option
-equivalent to git describe --tags).
-
-%package -n     python-%{pypi_name}
-Summary:        %{summary}
-%{?python_provide:%python_provide python-%{pypi_name}}
-
 Requires:       python3dist(setuptools)
 
-%description -n python-%{pypi_name}
+%description
 This is a setuptools_scm plugin that adds support for git archives (for
 example the ones GitHub automatically generates). Note that it only works for
 archives of tagged commits (because git currently lacks a format option
@@ -47,7 +36,7 @@ rm -rf %{pypi_name}.egg-info
 # the scripts in /usr/bin are overwritten with every setup.py install.
 %py_install
 
-%files -n python-%{pypi_name}
+%files
 %license LICENSE
 %doc README.rst
 %{python_sitelib}/setuptools_scm_git_archive/
