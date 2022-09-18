@@ -2,7 +2,7 @@
 %global pypi_name setuptools-scm-git-archive
 
 Name:           python-%{pypi_name}
-Version:        1.1
+Version:        1.4
 Release:        1
 Summary:        setuptools_scm plugin for git archives
 Group:          Development/Python
@@ -40,4 +40,4 @@ rm -rf %{pypi_name}.egg-info
 %license LICENSE
 %doc README.rst
 %{python_sitelib}/setuptools_scm_git_archive/
-%{python_sitelib}/setuptools_scm_git_archive-*-py?.?.egg-info/
+%{python_sitelib}/setuptools_scm_git_archive-*-py*.*.egg-info/
