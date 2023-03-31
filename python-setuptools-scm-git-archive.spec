@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        1.4
-Release:        1
+Release:        2
 Summary:        setuptools_scm plugin for git archives
 Group:          Development/Python
 License:        MIT
