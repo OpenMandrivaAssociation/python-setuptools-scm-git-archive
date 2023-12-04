@@ -2,8 +2,8 @@
 %global pypi_name setuptools-scm-git-archive
 
 Name:           python-%{pypi_name}
-Version:        1.4
-Release:        2
+Version:        1.4.1
+Release:        1
 Summary:        setuptools_scm plugin for git archives
 Group:          Development/Python
 License:        MIT
